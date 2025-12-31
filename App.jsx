@@ -30,7 +30,7 @@
 import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Connection from "./components/connection/connection";
-// import Install from "./components/Install/install";
+import Install from "./components/install/install.jsx";
 import CTA from "./components/CTA/CTA.jsx";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Download from "./components/Download/Download";
