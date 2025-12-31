@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./Connection.css";
+import "./connection.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,3 +78,4 @@ function Connection() {
 }
 
 export default Connection;
+
