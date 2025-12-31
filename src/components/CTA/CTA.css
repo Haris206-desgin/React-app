@@ -1,0 +1,92 @@
+
+
+
+
+.cta {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #ff4d4f, #ff6f61);
+  color: #fff;
+  overflow: hidden;
+}
+
+.cta-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* TEXT */
+.cta-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cta-text p {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  max-width: 480px;
+  opacity: 0.95;
+}
+
+/* BUTTON */
+.cta-btn {
+  margin-top: 2rem;
+  padding: 1rem 2.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  background: #fff;
+  color: #ff4d4f;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* VISUAL */
+.cta-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-visual img {
+  width: 240px;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.cta-visual .overlay {
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  width: 220px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cta-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-text p {
+    margin-inline: auto;
+  }
+
+  .cta-visual {
+    margin-top: 3rem;
+  }
+
+  .cta-visual .overlay {
+    display: none;
+  }
+}

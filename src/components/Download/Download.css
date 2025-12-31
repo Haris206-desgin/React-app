@@ -1,0 +1,105 @@
+.download-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9; 
+}
+
+.download-container {
+  background-color: #ff4d4d; 
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  color: white;
+  overflow: hidden; /* Keeps phones inside the border radius */
+  position: relative;
+}
+
+.download-text {
+  flex: 1;
+  z-index: 2;
+}
+
+.download-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.download-text p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.store-img {
+  height: 45px;
+  cursor: pointer;
+}
+
+.download-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 400px;
+}
+
+.phone-back {
+  width: 250px;
+  position: absolute;
+  bottom: -50px;
+  right: 180px;
+  z-index: 1;
+}
+
+.phone-front {
+  width: 280px;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 2;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .download-images {
+    margin-top: 40px;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .phone-back {
+    right: 100px;
+  }
+
+  .store-img {
+  height: 45px;
+  transition: transform 0.2s ease; 
+}
+
+.store-img:hover {
+  transform: scale(1.05); 
+}
+}
